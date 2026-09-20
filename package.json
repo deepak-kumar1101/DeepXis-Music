@@ -1,0 +1,42 @@
+{
+  "name": "deepxis-music-bot",
+  "version": "1.0.0",
+  "description": "DeepXis Music - A production-quality Discord music bot",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js",
+    "deploy": "node scripts/deployCommands.js",
+    "migrate": "node src/database/migrate.js",
+    "test": "node test/checkSyntax.js && node test/verify.js",
+    "test:check": "node --check src/index.js"
+  },
+  "keywords": [
+    "discord",
+    "discord-bot",
+    "music",
+    "discord-player",
+    "spotify",
+    "deepxis"
+  ],
+  "author": "DeepXis",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/voice": "^0.19.2",
+    "@napi-rs/canvas": "^1.0.9",
+    "@snazzah/davey": "^0.1.12",
+    "discord-api-types": "^0.38.55",
+    "discord.js": "^14.17.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "ffmpeg-static": "^5.2.0",
+    "libsodium-wrappers": "^0.7.16",
+    "opusscript": "^0.1.1",
+    "pg": "^8.13.3",
+    "prism-media": "^1.3.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
